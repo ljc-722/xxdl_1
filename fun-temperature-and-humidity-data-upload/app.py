@@ -41,7 +41,7 @@ def data_upload(request):
         }
 
         import requests
-
+        # 日志生产者的内网访问地址
         requests.post("https://cn-hangproducer-lhhcrgwsvd.cn-hangzhou-vpc.sae.run/produce",json=log_data)
 
         res = {  
